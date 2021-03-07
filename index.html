@@ -18,7 +18,7 @@
         </div>
         <div class="portion2">
             <span class="shadow">
-                <span class="container">
+                <span class="container-theme">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                         preserveAspectRatio="xMidYMid meet"
                         style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
@@ -47,11 +47,34 @@
                 </span>
                 <span class="shadow-click"></span>
             </span>
-
         </div>
     </div>
     <div class="body">
         <marquee behavior="scroll" direction="right">Welcome To Unit Converter</marquee>
+        <div class="container">
+            <div class="select-label">
+                <label for="select-converter">Select your convertor: </label>
+                <div class="select">
+                    <select id="select-converter">
+                        <option disabled selected hidden>Unit</option>
+                        <option>Volume</option>
+                        <option>Length</option>
+                        <option>Weight & Mass</option>
+                        <option>Temperature</option>
+                        <option>Energy</option>
+                        <option>Area</option>
+                        <option>Speed</option>
+                        <option>Time</option>
+                        <option>Power</option>
+                        <option>Data</option>
+                        <option>Pressure</option>
+                        <option>Angle</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputs"></div>
+            <div class="formula"></div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>

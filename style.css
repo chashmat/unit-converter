@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 * {
 	margin: 0px;
 	padding: 0px;
@@ -52,7 +53,7 @@ div.portion2 > span.shadow:hover {
 	background: #f9f9f9;
 }
 
-div.portion2 span.container {
+div.portion2 span.container-theme {
 	display: flex;
 	position: absolute;
 }
@@ -61,7 +62,7 @@ div.portion2 span.shadow-click {
 	height: 0%;
 	width: 0%;
 	border-radius: 50%;
-	transition: all 0.15s;
+	transition: all 0.1s;
 }
 
 div.portion2 span.shadow:active span.shadow-click {
@@ -72,6 +73,7 @@ div.portion2 span.shadow:active span.shadow-click {
 
 .body {
 	padding: 20px 30px;
+	height: 85%;
 }
 
 .body > marquee {
@@ -81,4 +83,63 @@ div.portion2 span.shadow:active span.shadow-click {
 	color: #333333;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
+	box-shadow: 0px 0px 12px 0px #484848;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.body > .container {
+	height: 100%;
+	width: 100%;
+	background: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0px 0px 12px 0px #484848;
+	margin-top: 2%;
+	padding: 2%;
+}
+
+.container > .select-label {
+	width: 100%;
+	background: #ececec;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.select-label > label {
+	margin-right: 10px;
+}
+
+.select-label > .select {
+	display: inline-block;
+	position: relative;
+}
+
+.select-label > .select::after {
+	content: 'arrow_drop_down';
+	font-family: 'material icons';
+	position: absolute;
+	font-weight: 900;
+	font-size: 20px;
+	right: 5px;
+	top: 4px;
+	color: #454545;
+}
+
+.select > select {
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #333333;
+	padding: 4px 8px;
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+	border-radius: 5px;
+	appearance: none;
+}
+
+.select > select:hover,
+.select > select:focus {
+	border: 1px solid #dddddd;
 }
