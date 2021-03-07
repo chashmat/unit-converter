@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@300;400;500&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	user-select: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+#heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 5px 10px;
+	border-bottom: 1px solid #dadce0;
+}
+
+#heading > div.portion1 {
+	display: flex;
+	align-items: center;
+}
+
+div.portion1 > img {
+	margin: 0px 5px;
+}
+
+#heading > div.portion2 {
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+}
+
+div.portion2 > span.shadow {
+	display: flex;
+	height: 100%;
+	width: 55px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+div.portion2 > span.shadow:hover {
+	background: #f9f9f9;
+}
+
+div.portion2 span.container {
+	display: flex;
+	position: absolute;
+}
+
+div.portion2 span.shadow-click {
+	height: 0%;
+	width: 0%;
+	border-radius: 50%;
+	transition: all 0.15s;
+}
+
+div.portion2 span.shadow:active span.shadow-click {
+	background: #ececec;
+	height: 100%;
+	width: 100%;
+}
+
+.body {
+	padding: 20px 30px;
+}
+
+.body > marquee {
+	background: #f9f9f9;
+	border: 1px solid #f9f9f9;
+	border-radius: 5px;
+	color: #333333;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
